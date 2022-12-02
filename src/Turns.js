@@ -17,7 +17,7 @@ class Turn{
 
     evaluateGuess(){
        if(this.newCard.correctAnswer === this.playerGuess) {
-        
+        this.correct = true
        }
        else{
         return false
@@ -27,7 +27,7 @@ class Turn{
 
     giveFeedback(){
         if(this.correct){
-            return 'great job'
+            return 'great job!'
         }
         else{
             return 'incorrect!'
